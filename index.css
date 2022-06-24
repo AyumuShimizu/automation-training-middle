@@ -1,0 +1,71 @@
+/* Basic */
+
+body {
+  font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic,
+    メイリオ, Meiryo, sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header {
+  position: relative;
+  top: 30px;
+  width: 800px;
+  padding: 1px 10px;
+  text-align: center;
+}
+.footer {
+  position: relative;
+  bottom: -300px;
+  width: 800px;
+  padding: 10px 85px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+/* Problem Title */
+.problem-title {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 20px 20px 150px;
+  border: solid #000000;
+}
+
+.problem-title:before {
+  position: absolute;
+  top: -107%;
+  left: -24px;
+  content: "";
+  width: 150px;
+  height: 230%;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  background: #000;
+}
+.problem-title span {
+  font-size: 50px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 18px;
+  color: #fff;
+}
+
+/* Reauirements */
+.requirements {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  padding: 0.5px;
+  background-color: #dcdcdc;
+}
+
+.requirements.requirements-title {
+  padding: 0px, 10px, 10px;
+}
+.requirements.li {
+  padding: 30px;
+}
