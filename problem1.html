@@ -8,77 +8,84 @@
     </head>
 
     <style>
-
+        /* CheckBox */
+        .checkbox {
+            text-align: center;
+            padding: 5px;
+            margin: 0 auto;
+            position: relative;
+            top: 30px;
+        }
     </style>
     <link rel="stylesheet" href="index.css">
     <div class="header">
         <h1 class="problem-title"><span>01</span>Middle Class Problem : Random Checkbox</h1>
     </div>
     <div class="requirements">
-        <h2>Requirements</h2>
+        <h2 class="requirements-title">Requirements</h2>
         <ul>
             <li>Randomly check the checkboxes 1 to 10.<br>（1から10のチェックボックスをONにしてください）</li>
-            <li>Check at least one check box.<br>（チェックボックスは、最低1つ以上はONにしてください</li>
-            <li>Randomly check the checkboxes and then test for checks.<br>（チェックボックスをランダムにチェックした後、チェックの有無をテストしてください。</li>
+            <li>Check at least one check box.<br>（チェックボックスは、最低1つ以上はONにしてください）</li>
+            <li>Randomly check the checkboxes and then test for checks.<br>（チェックボックスをランダムにチェックした後、チェックの有無をテストしてください。）</li>
             <li>Test the bool values for all checkboxes.<br>
-                （全てのcheckboxのbool値をテストしてください</li>
+                （全てのcheckboxのbool値をテストしてください）</li>
         </ul>
     </div>
     <div id="problem" class="problem-space">
-        <div>
+        <div class="checkbox">
             <label for="checkbox1">checkbox1</label>
             <input name="checkbox1" type="checkbox" v-model="ckb1">
             <label for="checkbox1">{{ ckb1 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox2">checkbox2</label>
             <input name="checkbox2" type="checkbox" v-model="ckb2">
             <label for="checkbox2">{{ ckb2 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox3">checkbox3</label>
             <input name="checkbox3" type="checkbox" v-model="ckb3">
             <label for="checkbox3">{{ ckb3 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox4">checkbox4</label>
             <input name="checkbox4" type="checkbox" v-model="ckb4">
             <label for="checkbox4">{{ ckb4 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox5">checkbox5</label>
             <input name="checkbox5" type="checkbox" v-model="ckb5">
             <label for="checkbox5">{{ ckb5 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox6">checkbox6</label>
             <input name="checkbox6" type="checkbox" v-model="ckb6">
             <label for="checkbox6">{{ ckb6 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox7">checkbox7</label>
             <input name="checkbox7" type="checkbox" v-model="ckb7">
             <label for="checkbox7">{{ ckb7 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox8">checkbox8</label>
             <input name="checkbox8" type="checkbox" v-model="ckb8">
             <label for="checkbox8">{{ ckb8 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox9">checkbox9</label>
             <input name="checkbox9" type="checkbox" v-model="ckb9">
             <label for="checkbox9">{{ ckb9 }}
         </div>
-        <div>
+        <div class="checkbox">
             <label for="checkbox10">checkbox10</label>
             <input name="checkbox10" type="checkbox" v-model="ckb10">
             <label for="checkbox10">{{ ckb10 }}
         </div>
     </div>
-    <div class="btn primary-btn">
-        <button onclick="location.href='https://github.com/AyumuShimizu/automation-training-middle'">Top</button>
-        <button>Next</button>
+    <div class="btn-primary-btn">
+        <button class="btn-top" onclick="location.href='https://github.com/AyumuShimizu/automation-training-middle'">Top</button>
+        <button class="btn-next">Next</button>
     </div>
     <div class="footer">
         Copyright Ayumu Shimizu 2022
