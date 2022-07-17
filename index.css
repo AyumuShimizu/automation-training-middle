@@ -26,8 +26,8 @@ body {
   text-align: center;
 }
 
-/* Problem Title */
-.problem-title {
+/* Header Title */
+.header-title {
   width: 800px;
   position: relative;
   overflow: hidden;
@@ -35,7 +35,7 @@ body {
   border: solid #000000;
 }
 
-.problem-title:before {
+.header-title:before {
   position: absolute;
   top: -107%;
   left: -24px;
@@ -46,7 +46,7 @@ body {
   transform: rotate(35deg);
   background: #000;
 }
-.problem-title span {
+.header-title span {
   font-size: 50px;
   position: absolute;
   z-index: 1;
@@ -55,18 +55,14 @@ body {
   color: #fff;
 }
 
-/* Problem-sub-title */
-.problem-sub-title {
+/* Problem title */
+.problem-title {
   width: 800px;
   position: relative;
   top: 170px;
   left: 450px;
 }
 
-.problem-sub-title.ul {
-  width: 800px;
-  padding: 0px, 10px, 10px;
-}
 .problem-sub-title.li {
   width: 800px;
   padding: 30px;
