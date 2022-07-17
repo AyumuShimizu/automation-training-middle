@@ -9,81 +9,78 @@
 
     <style>
         /* CheckBox */
-        .checkbox {
-            text-align: center;
-            padding: 5px;
-            margin: 0 auto;
-            position: relative;
-            top: 30px;
-            font-size: 18px;
+        .problem-space div{
+            width: 300px;
+            margin: auto 300px;
         }
     </style>
     <link rel="stylesheet" href="index.css">
+
     <div class="header">
         <h1 class="header-title"><span>01</span>Middle Class : Random Checkbox</h1>
     </div>
 
     <div class="problem">
-        <h1 class="problem-title">Problem1</h2>
-            <hr class="problem-title-hr">
-        <ul class="problem-requirements">
-            <li>Randomly check the checkboxes 1 to 10.<br>（1から10のチェックボックスをランダムにONにしてください）</li>
-            <li>Check at least one check box.<br>（チェックボックスは、最低1つ以上はONにしてください）</li>
-            <li>Randomly check the checkboxes and then test for checks.<br>（チェックボックスをランダムにチェックした後、チェックの有無をテストしてください。）</li>
-            <li>Test the bool values for all checkboxes.<br>
-                （全てのcheckboxのbool値をテストしてください）</li>
+        <h1>Problem1</h2>
+            <hr>
+        <ul>
+            <li>Create a method to randomly turn on check boxes 01 to 10.<br>（チェックボックス01から10をランダムにONにするメソッドを作成してください）</li>
+            <li>Make sure there is at least one check box on and off for each.<br>（チェックボックスはONとOFFそれぞれ1つ以上存在ようにしてください）</li>
+            <li>Randomly check and then automate the test with the Value of all checkboxes.<br>（ランダムにチェックした後、全チェックボックスのValueをテストを自動化してください）</li>
+            <li>Automate the test that the bool value labels for all checkboxes are correct.<br>（全チェックボックスのbool値のラベルが正しいことをテストを自動化してください）</li>
         </ul>
     </div>
+
     <div id="problem" class="problem-space">
-        <div class="checkbox">
-            <label for="checkbox1">checkbox1</label>
-            <input name="checkbox1" type="checkbox" v-model="ckb1">
-            <label for="checkbox1">{{ ckb1 }}
+        <div>
+            <label class="checkbox-lable" for="checkbox1">checkbox01</label>
+            <input class="checkbox" name="checkbox1" type="checkbox" v-model="ckb1">
+            <label class="output-label" for="checkbox1">{{ ckb1 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox2">checkbox2</label>
-            <input name="checkbox2" type="checkbox" v-model="ckb2">
-            <label for="checkbox2">{{ ckb2 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox2">checkbox02</label>
+            <input class="checkbox"  name="checkbox2" type="checkbox" v-model="ckb2">
+            <label class="output-label"  for="checkbox2">{{ ckb2 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox3">checkbox3</label>
-            <input name="checkbox3" type="checkbox" v-model="ckb3">
-            <label for="checkbox3">{{ ckb3 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox3">checkbox03</label>
+            <input class="checkbox"  name="checkbox3" type="checkbox" v-model="ckb3">
+            <label class="output-label"  for="checkbox3">{{ ckb3 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox4">checkbox4</label>
-            <input name="checkbox4" type="checkbox" v-model="ckb4">
-            <label for="checkbox4">{{ ckb4 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox4">checkbox04</label>
+            <input class="checkbox"  name="checkbox4" type="checkbox" v-model="ckb4">
+            <label class="output-label"  for="checkbox4">{{ ckb4 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox5">checkbox5</label>
-            <input name="checkbox5" type="checkbox" v-model="ckb5">
-            <label for="checkbox5">{{ ckb5 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox5">checkbox05</label>
+            <input class="checkbox"  name="checkbox5" type="checkbox" v-model="ckb5">
+            <label class="output-label" l for="checkbox5">{{ ckb5 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox6">checkbox6</label>
-            <input name="checkbox6" type="checkbox" v-model="ckb6">
-            <label for="checkbox6">{{ ckb6 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox6">checkbox06</label>
+            <input class="checkbox"  name="checkbox6" type="checkbox" v-model="ckb6">
+            <label class="output-label"  for="checkbox6">{{ ckb6 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox7">checkbox7</label>
-            <input name="checkbox7" type="checkbox" v-model="ckb7">
-            <label for="checkbox7">{{ ckb7 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox7">checkbox07</label>
+            <input class="checkbox"  name="checkbox7" type="checkbox" v-model="ckb7">
+            <label class="output-label"  for="checkbox7">{{ ckb7 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox8">checkbox8</label>
-            <input name="checkbox8" type="checkbox" v-model="ckb8">
-            <label for="checkbox8">{{ ckb8 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox8">checkbox08</label>
+            <input class="checkbox"  name="checkbox8" type="checkbox" v-model="ckb8">
+            <label class="output-label"  for="checkbox8">{{ ckb8 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox9">checkbox9</label>
-            <input name="checkbox9" type="checkbox" v-model="ckb9">
-            <label for="checkbox9">{{ ckb9 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox9">checkbox09</label>
+            <input class="checkbox"  name="checkbox9" type="checkbox" v-model="ckb9">
+            <label class="output-label"  for="checkbox9">{{ ckb9 }}
         </div>
-        <div class="checkbox">
-            <label for="checkbox10">checkbox10</label>
-            <input name="checkbox10" type="checkbox" v-model="ckb10">
-            <label for="checkbox10">{{ ckb10 }}
+        <div>
+            <label class="checkbox-lable"  for="checkbox10">checkbox10</label>
+            <input class="checkbox" name="checkbox10" type="checkbox" v-model="ckb10">
+            <label class="output-label" for="checkbox10">{{ ckb10 }}
         </div>
     </div>
     <div class="btn-primary-btn">
