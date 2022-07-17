@@ -55,19 +55,19 @@ body {
   color: #fff;
 }
 
-/* Reauirements */
-.requirements {
+/* Problem-sub-title */
+.proble.problem-sub-title {
   width: 800px;
   position: relative;
   top: 170px;
   left: 450px;
 }
 
-.requirements.requirements-title {
+.proble.problem-sub-title {
   width: 800px;
   padding: 0px, 10px, 10px;
 }
-.requirements.li {
+.problem-sub-title.li {
   width: 800px;
   padding: 30px;
 }
