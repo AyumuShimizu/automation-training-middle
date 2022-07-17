@@ -56,14 +56,14 @@ body {
 }
 
 /* Problem-sub-title */
-.proble.problem-sub-title {
+.problem-sub-title {
   width: 800px;
   position: relative;
   top: 170px;
   left: 450px;
 }
 
-.proble.problem-sub-title {
+.problem-sub-title.ul {
   width: 800px;
   padding: 0px, 10px, 10px;
 }
