@@ -59,11 +59,26 @@ body {
 .problem-title {
   width: 800px;
   position: relative;
-  top: 170px;
+  top: 160px;
   left: 450px;
 }
 
-.problem-sub-title.li {
+.problem-title-hr {
+  width: 850px;
+  position: relative;
+  top: 140px;
+  left: -70px;
+  border-color: #000;
+}
+
+.problem-requirements {
+  width: 600px;
+  position: relative;
+  top: 140px;
+  left: 450px;
+}
+
+.problem.li {
   width: 800px;
   padding: 30px;
 }
@@ -73,7 +88,7 @@ body {
   width: 800px;
   height: 400px;
   position: relative;
-  top: 175px;
+  top: 165px;
   left: 500px;
   border: solid;
 }
