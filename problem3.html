@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+
+        <div class="header">
+            <h1 class="header-title"><span>03</span>Middle Class : Wait Overlay</h1>
+        </div>
+    
+        <div class="problem">
+            <h1>Problem2</h2>
+                <hr>
+            <ul>
+
+                <li>Test that the CLICK button is disabled. <br>（CLICKボタンがdisabledがtrueであることをテストしてください）</li>
+                <li>Click the "ACTIVE button".<br>（ACTIVEボタンをクリックしてください）</li>
+                <li>Wait for automatic operation while the overlay is displayed.<br>（オーバーレイが表示されている間、自動操作を待機してください）</li>
+                <li>Click the "CLICK button" when the mask message disappears.<br>（オーバーレイが非表示になったらCLICKボタンをクリックしてください）</li>
+                <li>Test the value of the string that appears after clicking the "CLICK button".<br>（CLICKボタンをクリックした後に表示される文字列の値をテストしてください）</li>
+            </ul>
+        </div>
+
+        <div id="problem" class="problem-space">
+            <div>
+                <v-btn color="deep-purple accent-4" class="white--text" @click="overlay = !overlay">active
+                <v-icon right>mdi-open-in-new</v-icon>
+                </v-btn>
+                <v-btn class="black--text" disable="testDisabled" v-if="!toggleFlag" >CLICK</v-btn>
+                <v-btn color="deep-purple accent-4" class="white--text"  disable="testDisabled" v-if="toggleFlag" @click="showMessage">CLICK</v-btn>
+
+                <p v-show ="clickFlag">This overlay time is 2999ms!</p>
+                <v-overlay :value="overlay">
+                    <v-progress-circular indeterminate size="64"></v-progress-circular>
+                </v-overlay>
+            </div>
+        </div>    
+        
+        <div class="btn-primary-btn">
+            <button class="btn-back" onclick="location.href='https://ayumushimizu.github.io/automation-training-middle/problem1.html'">Back</button>
+            <button class="btn-next" onclick="location.href='https://ayumushimizu.github.io/automation-training-middle/problem3.html'">Next</button>
+        </div>
+        
+        <div class="footer">
+            Copyright Ayumu Shimizu 2022
+        </div>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+      data:() => ({
+        overlay:false,
+        toggleFlag:false,
+        testDisabled:false,
+        clickFlag:false,
+      }),
+
+      watch:{
+        overlay(val){
+            val && setTimeout(() => {
+                this.overlay = false
+            }, 2999, this.toggleFlag = true, this.testDisabled = true)
+        },
+      },
+      methods:{
+        showMessage: function() {
+            this.clickFlag = true
+        }
+      }
+    })
+
+  </script>
+</body>
+</html>
